@@ -1,14 +1,21 @@
+import { Outlet } from 'react-router-dom';
+import About from './About';
 import './App.css';
-import Body from './Body';
 import Header from './Header';
+import { Provider } from 'react-redux';
+import appStore from './utils/appStore';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Body />
-    </div>
+    <Provider store={appStore}>
+      <div className="App">
+        <Header />
+        <Outlet />
+      </div>
+    </Provider>
   );
 }
+
+
 
 export default App;

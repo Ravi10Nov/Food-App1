@@ -39,7 +39,7 @@ body{
     /* background:rgba(0,0,0,0.3); */
     /* border:1px solid #fff; */
     /* border:1px solid black; */
-    border-radius:10px;
+    /* border-radius:10px; */
     font-size:1rem;
     /* color:white; */
 }
@@ -63,12 +63,13 @@ body{
     justify-content:space-between;
 }
 .search-input{
-    margin-right:1.3rem;
+    margin-right:1rem;
+    margin-left:1.3rem;
 }
 .search-input >input{
     width:20vw;
     height:4vh;
-    margin-right:1.3rem;
+    margin-right:1.1rem;
     border-radius:1rem;
     padding:0rem 1rem;
 }
@@ -76,29 +77,187 @@ body{
     height:4vh;
     padding:0rem 1rem;
     border-radius:1rem;
+    margin-right:1.3rem;
 }
 .restaurant-container{
     padding:2rem 0rem;
+    width:98%;
     display:flex;
     flex-wrap:wrap; 
+    margin:0rem auto;
 }
 .restaurants{
     width:19vw;
+    /* margin:0rem 0.8rem; */
 }
 .restaurant{
-    margin:0.5rem auto;
+    margin:1.2rem auto;
+    padding:0rem 1rem;
     width:250px;
+    height:325px;
     max-width:100%;
     /* display:flex;
     flex-direction:column;
     justify-content:space-between;
     padding:1rem; */
     border-radius:15px;
-    box-shadow:-5px -5px -10px rgba(255,255,255,0.5) ,2px 2px 5px rgba(94,104,121,0.3);
+    box-shadow:0px 1px 1px 0 gray,0px 2px 2px 0 gray;
+}
+.restaurant:hover{
+    width:245px;
+    height:310px;
+    box-shadow:0px 0.5px 1px 0 gray;
 }
 .restaurant >img{
-    width:90%;
+    width:95%;
+    height:25vh;
     margin-top:1rem;
     margin-left:auto;
     margin-right:auto;
+    border-radius:1.1rem;
+}
+.details{
+    display:flex;
+    justify-content:space-between;
+    width:90%;
+    margin:1rem 0rem;
+}
+.res-menu{
+    width:60vw;
+    margin:1rem auto;
+    padding:1.4rem;
+}
+.res-info-main{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:1.2rem;
+}
+.res-info >h2,.res-rating{
+    margin:0.9rem 0rem;
+}
+.res-info >h2{
+    color:rgb(58, 53, 74);
+}
+.res-info >h5,.res-rating>h6{
+    color:rgb(103, 102, 105);
+}
+.res-rating>h3{
+    color:rgb(41, 133, 57);
+}
+.res-rating{
+    padding:0.4rem;
+    border-radius:6px;
+    box-shadow:0px 1px 1px 0 gray,0px 2px 2px 0 gray;
+}
+.res-rating>h3{
+    margin:0rem 0.7rem;
+}
+.product{
+    display:flex;
+    justify-content:space-between;
+    /* box-shadow:0px 1px 1px 0 gray,0px 2px 2px 0 gray; */
+    box-shadow:0px 1px 1px 0 gray;
+    margin:1.2rem 0rem;
+}
+.product-img >img{
+    width:8vw;
+    height:12vh;
+    border-radius:4px;
+    /* margin-top:0.2rem; */
+}
+.product-des,.product-img{
+    margin:0.8rem 0.4rem;
+}
+.product-des{
+    width:75%;
+}
+.product-des>h4{
+    color:rgb(40, 61, 61);
+}
+.product-des>p{
+    margin-top:1rem;
+    font-size:smaller;
+    color:rgb(134, 135, 135);
+}
+.resItem-main{
+    margin:1.2rem 0rem;
+    box-shadow:0px 1px 1px 0 gray;
+    padding:0.4rem 0.6rem;
+}
+.res-title>h3{
+    cursor:pointer;
+    margin:0rem 0.3rem;
+    /* box-shadow:0px 0.5px 0.5px 0 gray;  */
+    color:rgb(27, 28, 28);
+}
+.btn-add{
+    position:absolute;
+    padding:1px 10px;
+    border-radius:6px;
+    background-color:black;
+    color:white;
+    right:335px;
+}
+.btn-add-quantity{
+    position:absolute;
+    padding:1px 10px;
+    right:335px;
+    background-color:black;
+    color:white;
+    border-radius:5px;
+}
+.btn{
+    cursor:pointer;
+    padding:0px 1px;
+}
+.cart-container{
+    width:55vw;
+    margin:1.8rem auto;
+}
+.cart-container >h2{
+    margin:5px 8px;
+}
+.btn-rm-cart , .btn-ad-cart{
+    background-color:black;
+    color:white;
+}
+.cart{
+    margin:14px 10px;
+    padding:6px 12px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0px 1px 1px 0 gray;
+}
+.cart-img-name{
+    width:40%;
+    display:flex;
+    align-items:center;
+}
+.cart-img-name >img{
+    width:10vw;
+    height:12vh;
+    border-radius:8px;
+}
+.cart-img-name >p{
+    font-size:13px;
+}
+.cart-total{
+    display:flex;
+    justify-content:flex-end;
+    align-item:center;
+    margin:5px 10px;
+}
+.total{
+    margin:0px 10px;
+    background-color:black;
+    color:white;
+    padding:0px 8px;
+    border-radius:5px;
+    cursor:pointer;
+}
+.item-length{
+    font-size:15px;
+    position:absolute;
+    margin:-2px 4px;
 }
